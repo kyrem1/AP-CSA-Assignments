@@ -7,8 +7,12 @@
  */
 public class WinterMountain extends Mountain
 {
-    public WinterMountain()
+    private int temperature;
+
+    public WinterMountain(int _numMountains, int _temperature)
     {
-        
+        super(_numMountains);
+        temperature = _temperature;
     }
+    
 }

@@ -6,12 +6,11 @@
  * @version (a version number or a date)
  */
 public class Mountain extends Terrain
-{
-   public Mountain(){
-   
+{   
+    private int numMountains;
     
-    
-    
-    
+    public Mountain(int _numMountains) {
+        super();
+        numMountains = _numMountains;
     }
 }

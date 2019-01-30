@@ -7,8 +7,11 @@
  */
 public class Forest extends Terrain
 {
-    public Forest()
+    private int numTrees;
+    
+    public Forest(int _numTrees)
     {
-        
+        super();
+        numTrees = _numTrees;
     }
 }
