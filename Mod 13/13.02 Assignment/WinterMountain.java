@@ -7,12 +7,19 @@
  */
 public class WinterMountain extends Mountain
 {
-    private int temperature;
-
-    public WinterMountain(int _numMountains, int _temperature)
+    private double temperature;
+    
+    public WinterMountain(int l, int w, int _numMountains, double _temperature)
     {
-        super(_numMountains);
+        super(l, w, _numMountains);
         temperature = _temperature;
     }
     
+    public String getTemperature() {
+        return " and temperature of " + String.format("%4.2f", temperature) + " degrees";
+    }
+    
+    public String getName() {
+        return "Winter Mountain ";
+    }
 }

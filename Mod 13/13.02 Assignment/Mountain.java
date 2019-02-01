@@ -9,8 +9,17 @@ public class Mountain extends Terrain
 {   
     private int numMountains;
     
-    public Mountain(int _numMountains) {
-        super();
+    public Mountain(int l, int w, int _numMountains) {
+        super(l, w);
         numMountains = _numMountains;
+    }
+    
+     public String getNum() {
+        return " and has " + String.format("%d", numMountains) + " mountains";
+    }
+
+    
+    public String getName() {
+        return "Mountain ";
     }
 }
