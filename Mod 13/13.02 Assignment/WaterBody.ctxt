@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=l\ w\ _volume
+comment0.target=WaterBody(int,\ int,\ int)
+comment1.params=
+comment1.target=java.lang.String\ getVolume()
+comment2.params=
+comment2.target=java.lang.String\ getName()
+numComments=3

@@ -1,12 +1,12 @@
-------------------------------------------------------------------------
-This is the project README file. Here, you should describe your project.
-Tell the reader (someone who does not know anything about this project)
-all he/she needs to know. The comments should usually include at least:
-------------------------------------------------------------------------
+PROJECT TITLE: 13.02 / GameTerrainTester.java && LOTTA OTHER STUFF.
+PURPOSE OF PROJECT: To implement game-like terrains using class heirarchies.
+DATE: 2/4/19
+AUTHORS: James Harbour
 
-PROJECT TITLE:
-PURPOSE OF PROJECT:
-VERSION or DATE:
-HOW TO START THIS PROJECT:
-AUTHORS:
-USER INSTRUCTIONS:
+******************************PMR********************************
+<+s> This was a relatively simple excercise, however I enjoyed it.
+    
+
+<-s> No real noticable minuses
+*****************************************************************
+In the future: I will catch up to the pacing guide.
