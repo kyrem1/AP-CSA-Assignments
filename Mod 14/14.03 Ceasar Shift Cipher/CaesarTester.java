@@ -50,15 +50,11 @@ public class CaesarTester
                 String plaintext = inLine.next().replaceAll(" ", "").toUpperCase(); //User input but spaces are removed
                 System.out.println(Encryption.encrypt(plaintext));
             } else if(choice == 2) {        //Decryption Choice
-                /*
-                 *
-                 *
-                 * Implement Decryption Choice
-                 *
-                 *
-                 * */
-
+                System.out.print("Enter the ciphertext you would like to decrypt: ");
+                String ciphertext = inLine.next().replaceAll(" ", "").toUpperCase(); //User input but spaces are removed
+                System.out.println(Decryption.decrypt(ciphertext));
             } else if(choice == 3) {        //Exit Choice
+                System.out.println("Thank you for using my program!");
                 userFinished = true;
             }
         }

@@ -12,7 +12,7 @@
 public class Encryption
 {
     public static final String ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    public static String cipher = "";
+    public static String CIPHER = "";
     
     public Encryption() {
     }
@@ -56,7 +56,7 @@ public class Encryption
             newAlphabet += Character.toString((char)k);
         }
 
-        cipher = newAlphabet;
+        CIPHER = newAlphabet;
 
         return newAlphabet;
     }
@@ -68,7 +68,7 @@ public class Encryption
      */
     public static String encrypt(String plain) {
         char[] originalChars = ALPHABET.toCharArray();
-        char[] cipherChars = cipher.toCharArray();
+        char[] cipherChars = CIPHER.toCharArray();
         char[] plainChars = plain.toCharArray();
 
         String newText = "";
