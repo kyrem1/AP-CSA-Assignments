@@ -5,7 +5,7 @@
  * @version 2/11/19
  */
 
-public abstract class Homework3 {
+public abstract class Homework3 implements Processing{
     // Instance Variables
     private int numPages;
     private String type;

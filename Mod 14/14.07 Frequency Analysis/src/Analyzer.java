@@ -64,7 +64,9 @@ public class Analyzer {
         }
     }
 
-    //Print the output of the frequency analysis
+    /**
+     * <p>Prints Frequency Analysis to System</p>
+     */
     public void printFrequency() {
         //Menu Printing
         System.out.printf("%6s   %11s   %9s\n", "Letter", "Occurrences", "Frequency");
@@ -76,7 +78,12 @@ public class Analyzer {
 
     }
 
-    //Print Frequency Analysis to Output File
+    /**
+     *
+     * <p>Prints Frequency Analysis to Output File</p>
+     * @param fileName String name for input file
+     * @throws IOException Throw IO exception
+     */
     public void outputFrequency(String fileName) throws IOException{
         String outName = fileName.substring(0, fileName.length() - 4) + "Freq.txt";
         PrintWriter outFile = new PrintWriter(outName);

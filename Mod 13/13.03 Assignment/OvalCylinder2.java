@@ -27,6 +27,6 @@ public class OvalCylinder2 extends Oval2
     }
     
     public String getName() {
-        return "Oval Cylinder";
+        return "OvalCylinder";
     }
 }

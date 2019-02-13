@@ -19,7 +19,7 @@ public class HomeworkTester3 {
         ushistory.assign(9);
         english.assign(6);
         latin.assign(4);
-        calculus.assign(3);
+        calculus.assign(13);
 
         // Use an ArrayList to organize courses
         ArrayList<Homework3> hmwk = new ArrayList<>();
@@ -29,10 +29,14 @@ public class HomeworkTester3 {
         hmwk.add(calculus);
 
         // Display a list of assignments to be completed
-        System.out.println("\t My Homework Reading To-Do");
-        System.out.println("-----------------------------------");
+        System.out.println("\t\t\t     My Homework");
+        System.out.println("---------------------------------------------------");
         for(Homework3 h : hmwk) {
-            System.out.println(h.toString());
+            System.out.println("Before Reading: " + h.toString());
+            h.doHomework(2);
+            System.out.println("After Reading: " + h.toString());
+            System.out.println();
         }
     }
+
 }

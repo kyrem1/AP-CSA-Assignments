@@ -18,6 +18,11 @@ public class Calculus3 extends Homework3 {
     }
 
     public String toString() {
-        return getType() + " - read " + getNumPages() + " pages.";
+        return getType() + " - " + getNumPages() + " pages to read.";
+    }
+
+    @Override
+    public void doHomework(int pagesRead) {
+        setNumPages(getNumPages() - pagesRead);
     }
 }

@@ -22,10 +22,14 @@ public class CircleTester
         circles.add(oval);
         circles.add(ovalcyl);
         
+        //Iterate over ArrayList and showCenter
+        for(Circle2 c : circles) {
+            showCenter((Circle2)c);
+        }
+        
     }
     
     public static void showCenter(Circle2 c) {
-        
-        
+        System.out.println("For this " + c.getName() + " the " + c.getCenter());
     }
 }
