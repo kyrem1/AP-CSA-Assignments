@@ -1,0 +1,20 @@
+/ 5. Create abstract class for first type of product that implements the interface.
+    / a. Include instance vars for name and cost.
+    / b. Establish a constructor to initialize name and cost.
+    / c. Define the methods from the implementation class.
+    / d. Include an abstract method that should be overridden by subclasses.  (Suggestion: "Drive")
+/ 6. Create at least two concrete classes that extend the previous abstract class.
+    / a. Include a constructor.
+    / b. Establish any needed instance variables.
+    / c. Define any abstract methods.
+/ 7. Create 2nd product class that implements Product interface and Comparable<T>. (Suggestion: "Tool")
+    / a. Include instance variables for the name and cost
+    / b. Establish a constructor to initialize the name and cost
+    / d. Add compareTo method that compares objects of this second type of product based upon cost.
+8. Create a client class to manage your inventory of products:
+    a. Create instances of each type of product you've defined. Should contain multiples of some items with same name but different costs.
+    / b. Organize all of your products in an array list.
+    c. Create a static method to take inventory. This method, when passed the name of a product, will go through list and look for all items of same name. As it
+        does, a count for the quantity and total cost is maintained. Finally, it displays output stating the item name, total quantity, and total cost.
+    d Test the compareTo method established in the 2nd prod class. Make to instances of this prod. Use the compareTo method and based on results,
+        display a message communicating how the costs compare
