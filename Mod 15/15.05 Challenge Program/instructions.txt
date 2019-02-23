@@ -12,9 +12,9 @@
     / b. Establish a constructor to initialize the name and cost
     / d. Add compareTo method that compares objects of this second type of product based upon cost.
 8. Create a client class to manage your inventory of products:
-    a. Create instances of each type of product you've defined. Should contain multiples of some items with same name but different costs.
+    / a. Create instances of each type of product you've defined. Should contain multiples of some items with same name but different costs.
     / b. Organize all of your products in an array list.
-    c. Create a static method to take inventory. This method, when passed the name of a product, will go through list and look for all items of same name. As it
+    / c. Create a static method to take inventory. This method, when passed the name of a product, will go through list and look for all items of same name. As it
         does, a count for the quantity and total cost is maintained. Finally, it displays output stating the item name, total quantity, and total cost.
-    d Test the compareTo method established in the 2nd prod class. Make to instances of this prod. Use the compareTo method and based on results,
+    / d. Test the compareTo method established in the 2nd product class. Make two instances of this prod. Use the compareTo method and based on results,
         display a message communicating how the costs compare
