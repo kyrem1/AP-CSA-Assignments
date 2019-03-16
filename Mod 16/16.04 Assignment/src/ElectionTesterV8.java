@@ -4,9 +4,9 @@ import java.util.ArrayList;
  * <p>ArrayList Tester Class for Candidate Class Algorithms</p>
  * @author James Harbour
  * @version 3/7/19
- * //TODO Add replacement methods from V3
+ *
  */
-public class ElectionTesterV6 {
+public class ElectionTesterV8 {
 
     public static void main(String[] args) {
         // Candidate ArrayList
@@ -20,16 +20,13 @@ public class ElectionTesterV6 {
         System.out.println("Original Results:");
         printTable(candidates);
 
-        System.out.println("<< Changing Jeremy Chu to Boris Lu >>\n");
-        changeName(candidates, "Jeremy Chu", "Boris Lu");
+        System.out.println("<< Deleted Candidate at Position 3 >>");
+        deleteCandidateAtPos(candidates, 3);
         printTable(candidates);
 
-        System.out.println("<< Changing Mary Lewis votes to 297 >>\n");
-        changeVotes(candidates, "Mary Lewis", 297);
-        printTable(candidates);
 
-        System.out.println("<< Changing Bob Jones name to Blake Ban and votes to 185 >>\n");
-        changeNameVotes(candidates, "Bob Jones", "Blake Ban", 185);
+        System.out.println("<< Deleted Candidate with name Bob Jones >>");
+        deleteCandidateWithName(candidates, "Bob Jones");
         printTable(candidates);
     }
 
@@ -114,6 +111,67 @@ public class ElectionTesterV6 {
                 break;
             }
         }
+    }
+
+    /**
+     * <p>insert a new candidate into a specified position</p>
+     * @param array Election Data
+     * @param position Position to Insert at
+     * @param name Name of new Candidate
+     * @param votes Number of votes for new Candidate
+     */
+    public static void insertCandidateAtPos(ArrayList<Candidate> array, int position, String name, int votes) {
+        Candidate newCandidate = new Candidate(name, votes);
+        array.add(position, newCandidate);
+    }
+
+    /**
+     * <p>a method that will find a particular candidate by name and then insert a new candidate before that candidate</p>
+     * @param array Election Data
+     * @param findName Name of Candidate to insert before
+     * @param newName Name of new Candidate
+     * @param newVotes Number of votes for new Candidate
+     */
+    public static void insertCandidateBeforeName(ArrayList<Candidate> array, String findName, String newName, int newVotes) {
+        Candidate newCandidate = new Candidate(newName, newVotes);
+        int cPos = 0;
+
+        // Find Position to insert
+        for(int i = 0; i < array.size(); i++) {
+            Candidate c = array.get(i);
+            if(c.getName().equals(findName)) {
+                cPos = i;
+            }
+        }
+
+        array.add(cPos, newCandidate);
+    }
+
+    /**
+     * <p>delete a particular candidate by position in the election array</p>
+     * @param array Candidate Data
+     * @param delPos Position of candidate to delete
+     */
+    public static void deleteCandidateAtPos(ArrayList<Candidate> array, int delPos) {
+        array.remove(delPos);
+    }
+
+    /**
+     * <p>find a particular candidate by name and delete that candidate</p>
+     * @param array Candidate Data
+     * @param delName Name of candidate to delete
+     */
+    public static void deleteCandidateWithName(ArrayList<Candidate> array, String delName) {
+        int delPos = 0;
+
+        for(int i = 0; i < array.size(); i++) {
+            Candidate c = array.get(i);
+            if(c.getName().equals(delName)) {
+                delPos = i;
+            }
+        }
+
+        array.remove(delPos);
     }
 
 
