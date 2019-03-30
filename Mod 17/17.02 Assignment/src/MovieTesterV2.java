@@ -39,6 +39,7 @@ public class MovieTesterV2 {
         for(Movie m : array) {
             System.out.println(m);
         }
+        System.out.print("\n");
     }
 
     /**
@@ -49,12 +50,26 @@ public class MovieTesterV2 {
      * @param direction 1 sort ascending, 2 sort descending
      */
     public static void sortTitle(Movie[] a, int direction) {
+        String dir;
+        if(direction == 1) {
+            dir = "ascending";
+        } else {
+            dir = "descending";
+        }
+        System.out.printf("Algorithm: Insertion Sort | By Title | Direction: %s\n", dir);
         for(int i = 1; i < a.length; i++) {
             Movie x = a[i];
             int j = i - 1;
-            while(j >= 0 && a[j].getTitle().compareTo(x.getTitle()) > 0) {
-                a[j+1] = a[j];
-                j--;
+            if (direction == 1) {
+                while (j >= 0 && a[j].getTitle().compareTo(x.getTitle()) > 0) {
+                    a[j + 1] = a[j];
+                    j--;
+                }
+            } else if (direction == 2) {
+                while (j >= 0 && a[j].getTitle().compareTo(x.getTitle()) < 0) {
+                    a[j + 1] = a[j];
+                    j--;
+                }
             }
             a[j+1] = x;
         }
@@ -68,12 +83,26 @@ public class MovieTesterV2 {
      * @param direction 1 sort ascending, 2 sort descending
      */
     public static void sortYear(Movie[] a, int direction) {
+        String dir;
+        if(direction == 1) {
+            dir = "ascending";
+        } else {
+            dir = "descending";
+        }
+        System.out.printf("Algo: Insertion Sort | By Year | Direction: %s\n", dir);
         for(int i = 1; i < a.length; i++) {
             Movie x = a[i];
             int j = i - 1;
-            while(j >= 0 && a[j].getYear() > x.getYear()) {
-                a[j+1] = a[j];
-                j--;
+            if(direction == 1) {
+                while (j >= 0 && a[j].getYear() > x.getYear()) {
+                    a[j + 1] = a[j];
+                    j--;
+                }
+            } else if(direction == 2) {
+                while (j >= 0 && a[j].getYear() < x.getYear()) {
+                    a[j + 1] = a[j];
+                    j--;
+                }
             }
             a[j+1] = x;
         }
@@ -87,12 +116,26 @@ public class MovieTesterV2 {
      * @param direction 1 sort ascending, 2 sort descending
      */
     public static void sortStudio(Movie[] a, int direction) {
+        String dir;
+        if(direction == 1) {
+            dir = "ascending";
+        } else {
+            dir = "descending";
+        }
+        System.out.printf("Algo: Insertion Sort | By Studio | Direction: %s\n", dir);
         for(int i = 1; i < a.length; i++) {
             Movie x = a[i];
             int j = i - 1;
-            while(j >= 0 && a[j].getStudio().compareTo(x.getStudio()) > 0) {
-                a[j+1] = a[j];
-                j--;
+            if(direction == 1) {
+                while (j >= 0 && a[j].getStudio().compareTo(x.getStudio()) > 0) {
+                    a[j + 1] = a[j];
+                    j--;
+                }
+            } else if(direction == 2) {
+                while (j >= 0 && a[j].getStudio().compareTo(x.getStudio()) < 0) {
+                    a[j + 1] = a[j];
+                    j--;
+                }
             }
             a[j+1] = x;
         }
