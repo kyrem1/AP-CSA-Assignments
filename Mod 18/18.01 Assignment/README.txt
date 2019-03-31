@@ -1,5 +1,5 @@
 PROJECT TITLE: 18.01 / Music.java && MusicTesterV1.java
-PURPOSE OF PROJECT: To implement the merge sort algorithm in the context of movies.
+PURPOSE OF PROJECT: To implement the sequential search algorithm in the context of music.
 DATE: 3/30/19
 AUTHORS: James Harbour
 
